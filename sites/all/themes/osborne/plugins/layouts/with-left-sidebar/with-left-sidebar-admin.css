@@ -1,0 +1,13 @@
+.with-left-sidebar{
+  width:100%;
+  overflow:auto;
+}
+.with-left-sidebar .panel-left{
+  width:35%;
+  float:left;
+  margin-right:10px;
+}
+.with-left-sidebar .panel-content{
+  width:60%;
+  float:left;
+}

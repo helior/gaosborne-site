@@ -1,0 +1,83 @@
+#store-navigation {
+  float:right;
+  width:905px; 
+  height:47px;
+}
+#store-navigation ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+#store-navigation li {
+  position:relative;
+  float:left;
+  width:100px; /* When menu items are add/removed this value must be altered. */
+}
+#store-navigation a {
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  font-weight:bold;
+  height:47px;
+  line-height:47px;
+  text-align:center;
+  font-size:13px;
+}
+#store-navigation > ul > li:hover > a { /* or use a top-level class in anchors */
+  background:url(images/spotlight.png) center bottom no-repeat;
+}
+
+#store-navigation .image{
+  z-index:1;
+  position:absolute;
+  width:204px;
+  height:98px;
+  top:47px;
+  left:2px;
+  width:204px;
+  height:99px;
+  visibility:hidden;
+}
+html.js #store-navigation .image{visibility:inherit;}
+#store-navigation .sf-js-enabled .image{
+  opacity:0;
+}
+
+#store-navigation li:hover > .image{visibility:visible;}
+html.js #store-navigation li:hover > .image{visibility:inherit;}
+
+/* sub-menu */
+#store-navigation li ul {
+  display:block;
+  position:absolute;
+  top:46px;
+  left:-999em;
+  background:url(images/drop-down.png) 0 bottom no-repeat;
+  width:210px;
+  min-height:100px;
+  padding:99px 0 20px;
+}
+#store-navigation li li {
+  position:static;
+  float:none;
+  width:auto;
+}
+#store-navigation li li a {
+  text-align:left;
+  font-size:12px;
+  height:auto;
+  line-height:17px;
+  padding:4px 8px 8px;
+  margin:0 3px 0 2px;
+}
+#store-navigation li li a:hover {
+  background:#4d0f07 url(images/drop-down-highlight.png) 0 0 repeat-x;
+}
+
+#store-navigation li:hover ul{left:auto;}
+#store-navigation li.last ul {right:0;}
+#store-navigation > ul > li.last > .image{left:-108px;}
+#store-navigation li li ul {display:none;}
+
+
+#store-navigation li li .image {top:1px;}

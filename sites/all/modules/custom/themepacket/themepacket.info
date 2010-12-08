@@ -1,0 +1,4 @@
+; $Id$
+name = Theme Packet
+description = Allows theme implementations and their js/css assets to be automatically registered in the theme/asset registry.
+core = 6.x

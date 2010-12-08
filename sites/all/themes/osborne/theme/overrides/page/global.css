@@ -1,0 +1,92 @@
+/** Helper classes **/
+.clear{
+  clear:both;
+  display:block;
+}
+.hidden{
+  display:none;
+}
+
+
+/** Basic elements **/
+p, .node ol, .node ul{
+  color:#333;
+  font-size:12px;
+  line-height:17px;
+}
+
+a{
+  color:#720606;
+  outline:none;
+}
+input{outline:none;}
+.node ol,
+.node ul{
+  margin:auto;
+  padding-left:40px;
+}
+.node ol li,
+.node ul li{
+  list-style-type:inherit;
+}
+
+blockquote{}
+
+
+
+/** Global Drupal specific styles **/
+div.message-wrapper {
+  color:#e3ecf1;
+  font-size:13px;
+  padding:0 10px;
+  background:#487991;
+  background:-moz-linear-gradient(
+    center top,
+    #487991 0%,
+    #315263 100%
+    );
+  background:-webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#487991),
+    to(#315263)
+    );
+}
+div.messages{
+  padding:5px 30px;
+  background:url(/images/icon/warning.png) 0 3px no-repeat;
+}
+
+.node h2{
+  border-bottom:2px solid #444444;
+  color:#444444;
+  margin-bottom:8px;
+  padding-bottom:3px;
+}
+
+a.taxonomy {
+  text-decoration:none;
+  color:#fff;
+  font-size:12px;
+  padding:0 7px 1px;
+  margin-right:5px;
+  white-space:nowrap;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  background:rgb(99, 2, 2);
+  background:-moz-linear-gradient(
+    center top,
+    rgb(181, 28, 28) 0%,
+    rgb(99, 2, 2) 100%
+    );
+  background:-webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(181, 28, 28)),
+    to(rgb(99, 2, 2))
+    );
+}
+a.taxonomy:hover{text-decoration:underline;}

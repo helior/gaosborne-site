@@ -1,0 +1,13 @@
+.store-catalog{
+  width:100%;
+  overflow:auto;
+}
+.store-catalog .panel-left{
+  width:35%;
+  float:left;
+  margin-right:10px;
+}
+.store-catalog .panel-content{
+  width:60%;
+  float:left;
+}

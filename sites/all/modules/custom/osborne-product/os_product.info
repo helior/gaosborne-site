@@ -1,0 +1,5 @@
+name = Osborne Product
+description = Provides themes, navigations, blocks, and various other elements that are product-based.
+core = 6.x
+version = 1.0
+package = " GA Osborne"

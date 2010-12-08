@@ -1,0 +1,40 @@
+/*Stray rules*/
+#block-search-0{width:410px;margin:0 auto;}
+#block-search-0 h2{display:none;}
+
+
+#search-block-form .form-item{
+  background:url(/images/bg/search-textfield.png) 0 0 no-repeat;
+  width:373px;
+  height:27px;
+  float:left;
+  margin-top:10px;
+}
+#search-block-form .form-item input{
+  background:transparent url(/images/icon/ajax-loader.gif) right 30px no-repeat;
+  border:none;
+  outline:none;
+  font-size:13px;
+  padding-left:10px;
+  padding-right:17px;
+  padding-top:5px;
+  width:340px;
+}
+#search-block-form .empty{
+	color:#999;
+}
+#search-block-form .form-item input.throbbing{background-position:right 5px;}
+#search-block-form .form-submit{
+  background:url(/images/bg/search-submit.png) 0 0 no-repeat;
+  width:32px;
+  height:27px;
+  border:none;
+  display:block;
+  float:left;
+  text-align:left;
+  text-indent:-9999px;
+  text-transform:capitalize;
+  color:transparent;
+  cursor:pointer;
+  margin-top:10px;
+}

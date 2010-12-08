@@ -1,0 +1,3 @@
+<?php
+
+include_once('osborne_advertisement.features.inc');

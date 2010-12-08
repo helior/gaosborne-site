@@ -1,0 +1,155 @@
+body{
+  margin:0;
+  background-color:#00050b;
+}
+.body-inner{
+  background:#2b709c url(/images/bg/bg.png) 0 0 repeat-x;
+}
+#page{
+  margin:0 auto;
+  width: 1006px;
+}
+
+
+#header{
+  position:relative;
+  min-height:50px;
+  _height:50px;
+  z-index:1;
+}
+
+/** main (container for everything else) **/
+#main{
+  position: relative;
+  background:url(/images/bg/bg-main.png) 0 0 repeat-y;
+}
+#main-inner{
+  padding:0 7px;
+}
+
+/** content **/
+#content,
+.no-sidebars #content{
+  background:#fff url(/images/bg/bg-main-inner.png) repeat-x;
+  float: left;
+  width: 992px;
+  margin-left: 0;
+  margin-right: -992px; /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
+}
+
+.sidebar-left #content{
+  width: 760px;
+  margin-left: 200px; /* The width of #sidebar-left. */
+  margin-right: -992px; /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-right #content{
+  width: 792px;
+  margin-left: 0;
+  margin-right: -792px; /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content{
+  width: 592px;
+  margin-left: 200px; /* The width of #sidebar-left */
+  margin-right: -792px; /* Negative value of #content's width + left margin. */
+}
+
+#content-inner{
+  margin: 0;
+  padding: 0;
+}
+
+/** navbar **/
+#navbar{
+  background:url(/images/bg/navbar.png) 0 0 no-repeat;
+  position:relative;
+  left:1px;
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  margin-right: -100%; /* Negative value of #navbar's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navbar-inner. */
+  height: 94px; /* The navbar can have any arbritrary height. We picked one
+                    that is twice the line-height pluse 1em: 2 x 1.3 + 1 = 3.6
+                    Set this to the same value as the margin-top below. */
+}
+
+#navbar-bottom{
+  background:url(/images/bg/navbar-bottom.png) 0 0 no-repeat;
+  width:100%;
+  height:47px;
+  clear:both;
+  top:1px;
+  left:24px;
+}
+
+#content,
+#sidebar-left,
+#sidebar-right{
+  margin-top: 94px; /* Set this to the same value as the navbar height above. */
+}
+#navbar-inner{}
+#navbar ul{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/** sidebar-left **/
+#sidebar-left{
+  float: left;
+  width: 200px;
+  margin-left: 0;
+  margin-right: -200px; /* Negative value of #sidebar-left's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
+}
+
+#sidebar-left-inner{
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+/** sidebar-right **/
+#sidebar-right{
+  float: left;
+  width: 200px;
+  margin-left: 760px; /* Width of content + sidebar-left. */
+  margin-right: -960px; /* Negative value of #sidebar-right's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+}
+
+#sidebar-right-inner{
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+/** footer **/
+#footer{}
+#footer-inner{}
+
+/** Prevent overflowing content **/
+#content,
+#navbar,
+#sidebar-left,
+#sidebar-right,
+#footer{
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+
+/* If a div.clear-block doesn't have any content after it and its bottom edge
+   touches the bottom of the viewport, Firefox and Safari will mistakenly
+   place several pixels worth of space between the bottom of the div and the
+   bottom of the viewport. Uncomment this CSS property to fix this.
+   Note: with some over-large content, this property might cause scrollbars
+   to appear on the #page div.
+*/
+/*
+#page
+{
+  overflow-y: hidden;
+}
+*/

@@ -1,0 +1,5 @@
+name = Osborne Helper
+description = The glue that helps bind it all together.
+core = 6.x
+version = 1.0
+package = " GA Osborne"

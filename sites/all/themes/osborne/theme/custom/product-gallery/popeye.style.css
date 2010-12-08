@@ -1,0 +1,146 @@
+.product-gallery{
+  min-height:195px;
+}
+.ppy-imglist {
+    width:          100%;
+    display:        block;
+    overflow:       hidden;
+    
+}
+.ppy-imglist li {
+    padding:        10px;
+    border:         1px solid #f0f0f0;
+    border-radius:          5px;
+    -moz-border-radius:     5px;
+    -khtml-border-radius:   5px;
+    -webkit-border-radius:  5px;
+    background:     #fff;
+    list-style:     none;
+    float:          left;
+    display:        block;
+    margin:         0 10px 10px 0;
+}
+.ppy-imglist li a img {
+    display:        block;
+    border:         0;
+}
+.ppy .ppy-extcaption {
+    width:          240px;
+    display:        block;
+}
+.ppy .ppy-imglist li {
+    width:          240px;
+    height:         270px;
+}
+
+.ppy.ppy-active {
+    width:          262px;
+    float:          left;
+    margin:         0 20px 10px 0;
+}
+
+.ppy .ppy-outer {
+  padding:5px;
+  border:1px solid #666;
+  border-radius:0 6px 6px 6px;
+  -moz-border-radius:0 6px 6px 6px;
+  -webkit-border-radius:0 6px 6px 6px;
+  background:#fff;
+}
+
+.ppy .ppy-stage {
+  width:240px;
+  height:173px;
+  border-radius:0 5px 5px 5px;
+  -moz-border-radius:0 5px 5px 5px;
+  -webkit-border-radius:0 5px 5px 5px;
+}
+
+.ppy .ppy-outer:hover,
+.ppy.ppy-expanded .ppy-outer {
+  border:1px solid #333;
+  box-shadow:0 0 10px #000;
+  -moz-box-shadow:0 0 10px #000;
+  -webkit-box-shadow:0 0 10px #000;
+}
+
+.ppy .ppy-counter {
+  background:#000;
+  -moz-border-radius:5px 0;
+  -webkit-border-radius:5px 0;
+  border-radius:5px 0;
+  padding:0 2px;
+  opacity:0.7;
+  bottom:0;
+  color:#FFFFFF;
+  font-size:9px;
+  position:absolute;
+  right:0;
+}
+
+.ppy .ppy-stagewrap {
+    background:     #000;
+    border-radius:          0 5px 5px 5px;
+    -moz-border-radius:     0 5px 5px 5px;
+    -webkit-border-radius:  0 5px 5px 5px;
+}
+
+.ppy .ppy-loading {
+    background:     #000 url(images/loading1.gif) no-repeat center !important;
+}
+
+.ppy .ppy-nav {
+    background:     #000;
+    background:     -moz-linear-gradient(
+        center bottom,
+        rgb(0,0,0) 0%,
+        rgb(50,50,50) 100%
+    );
+    min-width:          41px;
+    height:         32px;
+    padding:        5px;
+    position:       absolute;
+    top:            0;
+    left:           0;  
+    border-radius:          0 0 5px 5px;
+    -moz-border-radius:     0 0 5px 5px;
+    -webkit-border-radius:  0 0 5px 5px;   
+}
+
+.ppy .ppy-nav a {
+    display:        block;
+    overflow:       hidden;
+    text-indent:    -900em;
+    height:         22px;
+    float:          left;
+    padding:        5px;
+    border-radius:          5px;
+    -moz-border-radius:     5px;
+    -khtml-border-radius:   5px;
+    -webkit-border-radius:  5px; 
+}
+
+.ppy .ppy-prev {
+    width:          22px;
+    background:     url(images/prev3.png) no-repeat center;
+}
+
+.ppy .ppy-next {
+    width:          22px;
+    background:     url(images/next3.png) no-repeat center;
+}
+
+.ppy .ppy-switch-enlarge {
+    width:          30px;
+    background:     url(images/enlarge3.png) no-repeat center;
+}
+
+.ppy .ppy-switch-compact {
+    width:          30px;
+    background:     url(images/compact3.png) no-repeat center;
+}
+
+.ppy .ppy-nav a:hover {
+    background-color:   #666;
+    cursor:         pointer;
+}

@@ -1,0 +1,113 @@
+<?php
+
+/********************************************************************
+ * Drupal Hooks
+ *******************************************************************/
+/**
+ * Implementation of hook_menu_alter().
+ */
+function os_helper_menu_alter(&$items) {
+  $items['node']['page callback'] = 'os_helper_front_page';
+  $items['node']['title'] = '';
+}
+
+
+/**
+ * Implementation of hook_block().
+ */
+function os_helper_block($op = 'list', $delta = 0, $edit = array()) {
+  switch ($op) {
+    case 'list':
+      $blocks['user-login']['info'] = t('User Block');
+      $blocks['newsletter-signup']['info'] = t('Newsletter Signup Form');
+      return $blocks;
+    break;
+    
+    case 'view':
+      switch($delta) {
+        case 'user-login':
+          global $user;
+          $block['content'] = theme('os_helper_user_login', $user);
+          break;
+        
+        case 'newsletter-signup':
+          $block['content'] = drupal_get_form('os_helper_newsletter_signup_form');
+          break;
+        
+      }
+      return $block;
+  }    
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function os_helper_theme($existing, $type, $theme, $path) {
+  $hooks = array();
+  if (function_exists('themepacket_discover')) {
+    $hooks += themepacket_discover($existing, $type, $theme, $path);
+  }
+  return $hooks;
+}
+
+
+
+
+
+
+
+
+/********************************************************************
+ * Contrib Hooks
+ *******************************************************************/
+
+
+/********************************************************************
+ * Form definitions/validation/submission handlers
+ *******************************************************************/
+
+function os_helper_newsletter_signup_form() {
+  $form['email'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Your email address..'),
+    );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Send'),
+    '#attributes' => array(
+      'class' => 'uber submit',
+      ),
+    );
+  
+  return $form;
+}
+
+
+/******************************************************************************
+ * Page Callbacks
+ *****************************************************************************/
+/**
+ * Page callback for the front page (/node)
+ */
+function os_helper_front_page() {
+  return '<h1>Front</h1>';
+}
+
+/******************************************************************************
+ * Custom Functions
+ *****************************************************************************/
+
+function _osborne_helper_get_taxonomy_image_path($tid) {
+  global $base_url;
+  $image = taxonomy_image_get_object($tid);
+  return str_replace($base_url, '', $image->url);
+}
+
+/**
+ * This cheapy little helper function makes css-friendly class names.
+ */
+function _os_helper_machine_name($name = '') {
+  if (!empty($name)) {
+    return str_replace(' ', '-', preg_replace('/[^a-z0-9\s]/', '', strtolower($name)));
+  }
+}

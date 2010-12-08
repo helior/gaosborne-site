@@ -1,0 +1,3 @@
+#admin-menu > ul > li > a[href$=os_admin_product_add] {
+  background: #6b150a;
+}

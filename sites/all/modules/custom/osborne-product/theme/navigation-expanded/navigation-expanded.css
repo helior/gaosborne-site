@@ -1,0 +1,55 @@
+#navigation-expanded{
+  padding:5px 7px 10px 13px;
+}
+#navigation-expanded ul{}
+#navigation-expanded li{}
+#navigation-expanded a{
+  color:#FFFFFF;
+  display:block;
+  position:relative;
+  text-decoration:none;
+}
+
+#navigation-expanded > ul > li > a{
+  border-color:#7D8B98;
+  border-style:solid;
+  border-width:1px 0;
+  font-size:12px;
+  margin-top:22px;
+  padding-bottom:3px;
+  padding-left:13px;
+  padding-top:3px;
+  text-transform:uppercase;
+}
+#navigation-expanded > ul > li > a.active{
+  background:url(images/flag.png) -26px 0 no-repeat;
+}
+
+#navigation-expanded li ul {
+  margin-top:10px;
+}
+#navigation-expanded li li {
+  margin-top:2px;
+  position:relative;
+}
+#navigation-expanded li li:hover .flag {
+  background:url(images/flag.png) 0 0 no-repeat;
+  height:34px;
+  left:-26px;
+  position:absolute;
+  top:-4px;
+  width:208px;
+}
+#navigation-expanded li li a {
+  color:#C2C9D3;
+  font-size:10px;
+  padding-left:12px;
+  text-transform:uppercase;
+}
+#navigation-expanded li li:hover a,
+#navigation-expanded li li a.active{
+  color:#fff;
+}
+#navigation-expanded li li a.active {
+  background:url(images/flag.png) -26px 0 no-repeat;
+}

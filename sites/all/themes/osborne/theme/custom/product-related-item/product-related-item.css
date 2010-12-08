@@ -1,0 +1,27 @@
+.related-product{
+  display:block;
+  clear:both;
+  padding:10px 0;
+  text-decoration:none;
+}
+
+.related-product .image{
+  background:#fff;
+  padding:2px;
+  border:1px solid #aaa;
+  display:block;
+  float:left;
+  margin-right:10px;
+  margin-top:2px;
+}
+.related-product .title{
+  color:#262626;
+  font-size:13px;
+  line-height:18px;
+}
+.related-product .body{
+  color:#666666;
+  display:block;
+  font-size:11px;
+  line-height:13px;
+}

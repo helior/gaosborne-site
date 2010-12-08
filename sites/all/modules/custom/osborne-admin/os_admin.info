@@ -1,0 +1,5 @@
+name = Osborne Admin
+description = Improves administrative usability and experience.
+core = 6.x
+version = 1.0
+package = " GA Osborne"

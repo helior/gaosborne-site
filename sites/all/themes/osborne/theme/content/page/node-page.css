@@ -1,0 +1,28 @@
+.node-page .node-inner{
+  padding:10px;
+}
+
+.node-page h1{
+  border-bottom:4px solid #333;
+  color:#333;
+  font-size:35px;
+  line-height:30px;
+  margin-bottom:5px;
+  padding-bottom:7px;
+}
+
+.node-page .image-wrapper{
+  background:url(/images/bg/page-image-shadow.png) center bottom no-repeat;
+  padding-bottom:15px;
+}
+.node-page .image{
+  background-position:center bottom;
+  margin: 0 auto 10px;
+  width:750px;
+  background-color:#fff;
+  padding:2px;
+  border:1px #999 solid;
+  -moz-box-shadow:2px 2px 8px #333;
+  -webkit-box-shadow:2px 2px 8px #333;
+  box-shadow:2px 2px 8px #333;
+}

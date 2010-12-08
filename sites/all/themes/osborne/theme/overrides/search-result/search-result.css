@@ -1,0 +1,28 @@
+.result-item{
+  border-bottom:1px solid #999;
+  padding:30px 15px;
+}
+.result-item:last-child{border:none;}
+
+.result-item .image{
+  background:#efefef;
+  border:1px solid #666;
+  display:block;
+  float:left;
+  height:80px;
+  margin-right:15px;
+  padding:3px;
+  width:80px;
+}
+.result-item a.title{
+  color:#333;
+  font-weight:bold;
+  display:block;
+  font-size:15px;
+}
+
+.result-item .found{
+  display:block;
+  color:#454545;
+  margin:6px 0;
+}

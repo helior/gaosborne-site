@@ -1,0 +1,35 @@
+.store-catalog{
+  width:100%;
+  background:url(faux.png) 0 0 repeat-y;
+/*  overflow:auto;*/
+}
+.store-catalog .panel-left{
+  width:207px;
+  float:left;
+  background:#001d30;
+  background:-moz-linear-gradient(
+    center top,
+    rgb(0,10,20) 0%,
+    rgb(0,29,48) 90%
+    );
+  background:-webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgb(0,10,20)),
+    color-stop(90%, rgb(0,29,48))
+    );
+}
+.store-catalog .panel-content{
+  width:785px;
+  float:left;
+}
+
+#store-catalog-empty-text {
+  color:#666;
+  font-size:30px;
+  line-height:36px;
+  margin:55px auto;
+  text-align:center;
+  width:550px;
+}

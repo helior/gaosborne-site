@@ -1,0 +1,50 @@
+#logo-title{
+  position:absolute;
+  left:-100px;
+  top:0;
+/*  z-index:1;*/
+}
+#logo-title h1 a{
+  display:block;
+  width:200px;
+  height:155px;
+  background:url(/images/icon/logo.png) 0 0 no-repeat;
+  text-align:left;
+  text-indent:-9999px;
+  text-transform:capitalize;
+  color:transparent;
+  cursor:pointer;
+}
+
+
+/*****************************************
+System Tabs
+*****************************************/
+/*.tabs{
+  left:35px;
+  position:absolute;
+  top:30px;
+  z-index:1;
+}
+.tabs ul{
+  border:none;
+  margin:0;
+  padding:0;
+}
+.tabs ul li{}
+.tabs ul li a{
+  font-size:10px;
+  background:#333;
+  color:#fff;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:none;
+}
+.tabs ul li a:hover{background:#666;}
+.tabs ul li.active a {
+  color:#333;
+  background:#ccc;
+  border:none;
+}
+.tabs ul li.active a:hover{background:#ccc;}*/

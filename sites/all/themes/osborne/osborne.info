@@ -1,0 +1,28 @@
+name = G.A. Osborne Theme
+description = G.A. Osborne Theme based on Zen
+screenshot = screenshot.png
+core = 6.x
+base theme = zen
+
+
+
+regions[navbar_bottom]	= Navbar Bottom
+regions[left]           = left sidebar
+regions[right]          = right sidebar
+regions[content_top]    = content top
+regions[content_bottom] = content bottom
+regions[footer]         = footer
+
+
+  ; Set the default settings to be used in theme-settings.php
+settings[zen_block_editing]        = 1
+settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb_separator] = ' › '
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 1
+settings[zen_breadcrumb_title]     = 0
+settings[zen_rebuild_registry]     = 0
+settings[zen_wireframes]           = 0
+
+plugins[panels][layouts] = plugins/layouts
+plugins[panels][styles] = plugins/styles

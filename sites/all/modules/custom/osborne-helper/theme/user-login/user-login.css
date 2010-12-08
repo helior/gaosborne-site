@@ -1,0 +1,11 @@
+#block-osborne_helper-user-login{
+  float:right;
+}
+
+#block-osborne_helper-user-login a.login{
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	padding-right:18px;
+	line-height:47px;
+}

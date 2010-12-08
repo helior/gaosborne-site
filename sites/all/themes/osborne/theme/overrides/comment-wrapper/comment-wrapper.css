@@ -1,0 +1,55 @@
+#comments{}
+
+/** Individual comment styles **/
+#comments .comment{
+  margin:20px 0;
+}
+#comments .reviewer{
+  color:#666666;
+  display:block;
+  font-size:12px;
+  line-height:13px;
+}
+
+
+
+/** Form Styles **/
+#comments .box .title{
+  display:none;
+}
+#comments #add-review{
+  display:block;
+  font-weight:bold;
+  font-size:12px;
+}
+
+#comment-form{
+  display:none;
+/*  -moz-border-radius:7px 7px 7px 7px;
+  background:#92bcdd;
+  background:-moz-linear-gradient(
+    center top,
+    #fff 0%,
+    #92bcdd 90%
+    );
+  border:1px solid #DDDDDD;
+  padding:10px;*/
+}
+#comment-form label{
+  font-weight:normal;
+  font-size:12px;
+  color:#444;
+}
+#comment-form .form-text,
+#comment-form .form-textarea{
+  border:1px solid #999999;
+  padding:3px;
+  font-size:11px;
+  margin:1px;
+}
+#comment-form .form-text:focus,
+#comment-form .form-textarea:focus{
+  border:2px #888 solid;
+  margin:0;
+}
+#comment-form .form-text-area{}
